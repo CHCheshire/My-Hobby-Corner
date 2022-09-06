@@ -7,9 +7,6 @@
     background-color: #6D0000;
 }
 
-.col-md-4 {
-    border-style:solid;
-}
 
 /* --------------------------------------------------------- Texts and Paddings */
 
@@ -21,6 +18,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.col-md-4 {
+    border-style:solid; 
+    border-radius: 10px;
 }
 
 .image {
