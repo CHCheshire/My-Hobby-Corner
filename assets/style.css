@@ -14,7 +14,7 @@
 
 /* ---------------------------------------------------------- Heading */
 
-.container {
+.contain {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,6 +23,7 @@
 .col-md-4 {
     border-style:solid; 
     border-radius: 10px;
+    padding:10px;
 }
 
 .image {
