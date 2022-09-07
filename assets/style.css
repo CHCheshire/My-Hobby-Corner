@@ -4,7 +4,7 @@
 /* --------------------------------------------------------- Colours */
 
 .bg-color-page {
-    background-color: #6D0000;
+    background-color: #fffafa
 }
 
 
@@ -55,7 +55,7 @@
     font-size: 48px;
     font-family: "Exo", sans-serif;
     font-weight: 300;
-    color: #8f8f8f;
+    color: #fffafa;
     padding: 20px;
 }
 
@@ -105,4 +105,46 @@ i {
 		transform: scale(0.95);
 		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 	}
+}
+
+.blob1 {
+	background: #53682A;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+.blob2 {
+	background: #761F17;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+
+.blob3 {
+	background: #BE5504;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+.blob4 {
+	background: #545454;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+
+.blob5 {
+	background: #003366;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
 }
