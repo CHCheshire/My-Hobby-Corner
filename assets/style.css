@@ -20,10 +20,14 @@
     justify-content: center;
 }
 
-.col-md-4 {
+.col-md-3 {
     border-style:solid; 
     border-radius: 10px;
-    padding:10px;
+    padding: 10px;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    margin: 40px 20px 20px 40px;
+    text-align: center;
 }
 
 .image {
@@ -46,7 +50,59 @@
     color: #8f8f8f;
     padding: 20px;
 }
+
+.title {
+    font-size: 48px;
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #8f8f8f;
+    padding: 20px;
+}
+
+i {
+    font-size: 48px;
+}
 /* ---------------------------------------------------------- Footer */
 
 
 /* ---------------------------------------------------------- Homepage */
+
+.menu {
+    margin: auto;
+    text-align: center;
+}
+
+.rows {
+    padding-right: 15px;
+    flex-wrap: wrap;
+}
+
+.page {
+    display: grid;
+}
+
+
+.blob {
+	background: black;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
