@@ -61,6 +61,7 @@
 
 i {
     font-size: 48px;
+	color:#fffafa;
 }
 /* ---------------------------------------------------------- Footer */
 
@@ -134,7 +135,7 @@ footer {
 
 
 .blob {
-	background: black;
+	background: #8658a5;
 
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
 	transform: scale(1);
