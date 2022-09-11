@@ -1,8 +1,7 @@
-from django.shortcuts import render
-
 # Create your views here.
 from django.contrib import messages
 from django.shortcuts import render, redirect
+from django.contrib.auth.models import User, auth
 
 def register(request):
     if request.method == 'POST':
@@ -13,7 +12,7 @@ def register(request):
         password = request.POST['password']
         confirm_password = request.POST['confirm_password']
 
-        if password==confirm_password:
+        if password == confirm_password:
             if User.objects.filter(username=username).exists():
                 messages.info(request, 'Username is already taken')
                 return redirect(register)
@@ -21,17 +20,39 @@ def register(request):
                 messages.info(request, 'Email is already taken')
                 return redirect(register)
             else:
-                user = User.objects.create_user(username=username, password=password, 
-                                        email=email, first_name=first_name, last_name=last_name)
+                user = User.objects.create_user(username=username, password=password,
+                email=email, first_name=first_name, last_name=last_name)
                 user.save()
                 
                 return redirect('login_user')
-
-
         else:
             messages.info(request, 'Both passwords are not matching')
-            return redirect(register)
-            
-
+            return redirect(register) 
     else:
         return render(request, 'registeration.html')
+
+
+def login_user(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+
+        user = auth.authenticate(username=username, password=password)
+
+        if user is not None:
+            auth.login(request, user)
+            return redirect('home')
+        else:
+            messages.info(request, 'Invalid Username or Password')
+            return redirect('login_user')
+    else:
+        return render(request, 'login.html')
+
+
+def logout_user(request):
+    auth.logout(request)
+    return redirect('homepage.html')
+
+
+def home(request):
+    return render(request, 'homepage.html')
