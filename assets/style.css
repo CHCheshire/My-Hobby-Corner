@@ -36,7 +36,7 @@
 
 .image {
     flex-basis: 40%;
-    max-width: 360px;
+    text-align: center;
 }
 
 .text {
@@ -52,7 +52,6 @@
     font-family: "Exo", sans-serif;
     font-weight: 300;
     color: #8f8f8f;
-    padding: 20px;
 }
 
 .title {
@@ -198,4 +197,21 @@ footer {
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
 	transform: scale(1);
 	animation: pulse 2s infinite;
+}
+
+
+/* ---------------------------------------------------------- Cooking/Gaming/Tabletop */
+
+
+.side-navbar {
+    display: block;
+    text-align: center;
+}
+
+.navbaritem {
+    padding: 20px;
+    border: solid 1px black;
+    width: 90%;
+    border-radius: 10px;
+    margin: auto;
 }
