@@ -125,6 +125,7 @@ footer {
 .rows {
     padding-right: 15px;
     flex-wrap: wrap;
+    display:flex;
 }
 
 .page {
